@@ -1,13 +1,13 @@
 import React from "react";
 import { useModal } from "@/hooks/client/useModalStack";
-import SampleModal from "@/components/modal/sample-modal";
 import { Button } from "@mui/material";
+import CustomModalSample from "@/components/modal/CustomModalSample";
 function ModalSample() {
   const { openModal, closeModal } = useModal();
   const onModalClick = () => {
     openModal({
       title: "Modal1",
-      element: <SampleModal />,
+      element: <CustomModalSample />,
       handleConfirm(...args) {
         window.alert(args);
         closeModal();

@@ -16,10 +16,10 @@ function ReactQuerySample() {
       data: { title: "test", completed: false },
     });
   };
-  console.log("todo:::", todo);
-  console.log("todos:::", todos);
-  console.log("postData:::", postData);
-  console.log("putTodo:::", putTodo);
+  console.log("get todo:::", todo);
+  console.log("get todos:::", todos);
+  console.log("post data:::", postData);
+  console.log("put todo:::", putTodo);
   return (
     <section className="mt-10 border border-black-100 p-5">
       <h1 className="font-bold mb-5">React Query Sample Section</h1>

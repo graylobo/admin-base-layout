@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { Button, Input } from "@mui/material";
 import React, { useState } from "react";
 
-function SampleModal() {
+function CustomModalSample() {
   const { currentModal, openModal, closeModal } = useModal();
   const [value, setValue] = useState("");
   const onModalClick = () => {
@@ -31,7 +31,7 @@ function SampleModal() {
   );
 }
 
-export default SampleModal;
+export default CustomModalSample;
 
 const Wrapper = styled.div`
   inset: 0px;

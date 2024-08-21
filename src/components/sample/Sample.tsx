@@ -1,8 +1,8 @@
 "use client";
-import ModalSample from "@/components/sample/modal";
-import ReactQuerySample from "@/components/sample/react-query";
-import ZustandSample from "@/components/sample/zustand";
+import ReactQuerySample from "@/components/sample/ReactQuerySample";
 import styles from "./index.module.css";
+import ZustandSample from "@/components/sample/ZustandSample";
+import ModalSample from "@/components/sample/ModalSample";
 
 function Sample() {
   return (

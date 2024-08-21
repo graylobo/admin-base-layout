@@ -1,5 +1,5 @@
 "use client";
-import CloseButton from "@/components/common/buttons/close-button";
+import CloseButton from "@/components/common/buttons/CloseButton";
 import {
   ComponentSection,
   DefaultLayout,

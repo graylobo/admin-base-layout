@@ -1,4 +1,3 @@
-import SidebarMenuItem from "@/components/containers/sidebar/menu-item";
 import { DrawerHeader } from "@/layouts/Base";
 import {
   ChevronLeft,
@@ -10,6 +9,7 @@ import {
 import { Divider, IconButton, List } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { SidebarDrawer } from "./style";
+import SidebarMenuItem from "@/components/containers/sidebar/SidebarMenuItem";
 const menuItems = [
   {
     icon: Send,
