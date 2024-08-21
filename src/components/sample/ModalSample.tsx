@@ -16,6 +16,7 @@ function ModalSample() {
   };
   return (
     <section className="mt-10 border border-black-100 p-5">
+      <h2 className="font-bold mb-5">Modal Sample Section</h2>
       <Button onClick={onModalClick}>모달 열기</Button>
     </section>
   );

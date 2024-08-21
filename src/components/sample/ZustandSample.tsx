@@ -21,7 +21,7 @@ function ZustandSample() {
   };
   return (
     <section className="mt-10 border border-black-100 p-5">
-      <h1 className="font-bold mb-5">Zustand Sample Section</h1>
+      <h2 className="font-bold mb-5">Zustand Sample Section</h2>
       <div className="flex flex-col mb-10">
         <span>Sample1:{sample1}</span>
         <Button

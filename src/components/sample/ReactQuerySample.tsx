@@ -22,7 +22,7 @@ function ReactQuerySample() {
   console.log("put todo:::", putTodo);
   return (
     <section className="mt-10 border border-black-100 p-5">
-      <h1 className="font-bold mb-5">React Query Sample Section</h1>
+      <h2 className="font-bold mb-5">React Query Sample Section</h2>
       <div>
         <Button variant="contained" onClick={handlePostTodo}>
           Post
