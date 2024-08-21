@@ -1,15 +1,8 @@
-import { DrawerHeader } from "@/layouts/Base";
-import {
-  ChevronLeft,
-  ChevronRight,
-  Drafts,
-  MoveToInbox,
-  Send,
-} from "@mui/icons-material";
-import { Divider, IconButton, List } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-import { SidebarDrawer } from "./style";
 import SidebarMenuItem from "@/components/containers/sidebar/SidebarMenuItem";
+import { DrawerHeader } from "@/layouts/Base";
+import { Drafts, MoveToInbox, Send } from "@mui/icons-material";
+import { List } from "@mui/material";
+import { SidebarDrawer } from "./style";
 const menuItems = [
   {
     icon: Send,
@@ -39,20 +32,12 @@ const menuItems = [
 
 type SidebarProps = {
   openSidebar: boolean;
-  handleDrawerClose: () => void;
 };
 
-function Sidebar({ openSidebar, handleDrawerClose }: SidebarProps) {
-  const theme = useTheme();
-
+function Sidebar({ openSidebar }: SidebarProps) {
   return (
     <SidebarDrawer variant="permanent" open={openSidebar}>
-      <DrawerHeader>
-        <IconButton onClick={handleDrawerClose}>
-          {theme.direction === "rtl" ? <ChevronRight /> : <ChevronLeft />}
-        </IconButton>
-      </DrawerHeader>
-      <Divider />
+      <DrawerHeader />
       <List>
         {menuItems.map((item, index) => (
           <SidebarMenuItem key={index} item={item} openSidebar={openSidebar} />

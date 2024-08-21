@@ -30,11 +30,12 @@ export default function BaseLayout({ children }: any) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <NavBar openSidebar={openSidebar} handleDrawerOpen={handleSidebarOpen} />
-      <Sidebar
+      <NavBar
         openSidebar={openSidebar}
+        handleDrawerOpen={handleSidebarOpen}
         handleDrawerClose={handleSidebarClose}
       />
+      <Sidebar openSidebar={openSidebar} />
 
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
