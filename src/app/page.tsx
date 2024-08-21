@@ -1,10 +1,9 @@
-import Sample from "@/components/sample";
-import Image from "next/image";
+import Sample from "@/components/sample/Sample";
 
 export default function Home() {
-    return (
-        <main>
-            <Sample />
-        </main>
-    );
+  return (
+    <main>
+      <Sample />
+    </main>
+  );
 }

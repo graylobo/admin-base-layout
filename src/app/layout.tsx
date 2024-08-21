@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import QueryClientProviders from "@/providers/query-client-provider";
 import BaseLayout from "@/layouts/Base";
+import BaseModal from "@/components/modal/base";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <BaseModal />
       <body className={inter.className}>
         <QueryClientProviders>
           <BaseLayout>{children}</BaseLayout>
