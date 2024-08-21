@@ -4,7 +4,7 @@ import "./globals.css";
 import QueryClientProviders from "@/providers/query-client-provider";
 import BaseLayout from "@/layouts/Base";
 import BaseModal from "@/components/modal/base";
-
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,7 +22,9 @@ export default function RootLayout({
       <BaseModal />
       <body className={inter.className}>
         <QueryClientProviders>
-          <BaseLayout>{children}</BaseLayout>
+          <AppRouterCacheProvider>
+            <BaseLayout>{children}</BaseLayout>
+          </AppRouterCacheProvider>
         </QueryClientProviders>
       </body>
     </html>
