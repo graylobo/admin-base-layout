@@ -1,6 +1,6 @@
 import { AppBar } from "@/components/containers/navbar/style";
-import MenuIcon from "@mui/icons-material/Menu";
-import { IconButton, Toolbar, Typography, useTheme } from "@mui/material";
+import { Menu, Close } from "@mui/icons-material";
+import { IconButton, Toolbar, Typography } from "@mui/material";
 import Link from "next/link";
 
 type NavBarProps = {
@@ -27,20 +27,26 @@ function NavBar({
       open={openSidebar}
       sx={{
         width: "100%",
-        zIndex: (theme) => theme.zIndex.drawer + 1,
+        zIndex: (theme: any) => theme.zIndex.drawer + 1,
       }}
     >
       <Toolbar>
         <IconButton
           color="inherit"
-          aria-label="open drawer"
+          aria-label={openSidebar ? "close drawer" : "open drawer"}
           onClick={handleDrawerToggle}
           edge="start"
           sx={{
             marginRight: 5,
+            transition: (theme: any) =>
+              theme.transitions.create("transform", {
+                duration: theme.transitions.duration.shorter,
+              }),
+
+            transform: openSidebar ? "rotate(180deg)" : "none",
           }}
         >
-          <MenuIcon />
+          {openSidebar ? <Close /> : <Menu />}
         </IconButton>
         <Link href={"/"}>
           <Typography variant="h6" noWrap component="div">
