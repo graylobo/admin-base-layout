@@ -16,10 +16,10 @@ function CustomModalSample() {
   return (
     <Wrapper>
       <h1>Sample Modal</h1>
-      <Button className="block" onClick={onModalClick}>
-        모달 내에서 모달 열기
-      </Button>
-      <Input onChange={(e) => setValue(e.target.value)} />
+      <div>
+        <Button onClick={onModalClick}>모달 내에서 모달 열기</Button>
+      </div>
+      <Input className="block" onChange={(e) => setValue(e.target.value)} />
       <Button
         onClick={() => {
           currentModal?.handleConfirm?.(value);

@@ -7,26 +7,17 @@ const menuItems = [
   {
     icon: Send,
     primaryText: "Sent mail",
-    subItems: [
-      { primaryText: "Sent Item 1", href: "/sent-mail" },
-      { primaryText: "Sent Item 2", href: "/sent-mail" },
-    ],
+    subItems: [{ primaryText: "Sent mail sub", href: "/sent-mail" }],
   },
   {
     icon: Drafts,
     primaryText: "Drafts",
-    subItems: [
-      { primaryText: "Draft 1", href: "/drafts" },
-      { primaryText: "Draft 2", href: "/drafts" },
-    ],
+    subItems: [{ primaryText: "Draft sub", href: "/drafts" }],
   },
   {
     icon: MoveToInbox,
     primaryText: "Inbox",
-    subItems: [
-      { primaryText: "Starred", href: "/inbox" },
-      { primaryText: "All mail", href: "/inbox" },
-    ],
+    subItems: [{ primaryText: "Inbox sub", href: "/inbox" }],
   },
 ];
 
